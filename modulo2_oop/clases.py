@@ -39,7 +39,6 @@ auto2.encender()
 # Atributos: nombre, edad, email
 # Método presentarse() que imprima algo como: "Hola, soy Emanuel, tengo 31 años."
 # Método es_mayor_de_edad() que imprima si la persona es mayor o menor de edad
-#- Crear una lista vacía llamada "contactos"
 
 class Persona:                                            
 
@@ -57,7 +56,10 @@ class Persona:
         else:
             print(f"{self.nombre} es menor de edad")     
 
-
 persona1 = Persona("Emanuel",31,"emanuel@gmail.com")  
 persona1.presentarse()
 persona1.es_mayor_de_edad()
+
+persona2 = Persona("Lucas", 15, "lucas@gmail.com")
+persona2.presentarse()
+persona2.es_mayor_de_edad()
