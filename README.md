@@ -19,8 +19,8 @@ Parte del roadmap hacia **Backend Developer with AI Integration**.
 
 ### 🔄 Fase 2 — Programación Orientada a Objetos
 - [x] Clases y objetos
-- [ ] Herencia
-- [ ] Encapsulamiento
+- [x] Herencia
+- [x] Encapsulamiento
 - [ ] Manejo de archivos y errores
 - [ ] Librerías estándar: os, json, datetime
 - [ ] Entornos virtuales y pip
