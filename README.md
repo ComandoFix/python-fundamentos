@@ -57,29 +57,6 @@ Parte del roadmap hacia **Backend Developer with AI Integration**.
 
 ---
 
-## 📁 Estructura del repositorio
-python-fundamentos/
-│
-├── modulo1_variables/
-│   ├── main.py
-│   ├── input_fstrings.py
-│   ├── condicionales.py
-│   ├── bucles.py
-│   ├── funciones.py
-│   ├── listas.py
-│   └── diccionarios.py
-│
-├── modulo2_oop/
-│   ├── clases.py
-│   └── herencia.py
-│
-├── proyecto_final_modulo1/
-│   └── main.py
-│
-├── apuntes_git.md
-└── README.md
-
----
 
 ## 🛠️ Tecnologías utilizadas
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
