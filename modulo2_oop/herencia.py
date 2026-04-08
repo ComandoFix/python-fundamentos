@@ -45,7 +45,7 @@ class Estudiante(Persona):
         self.promedio = promedio
 
     def mostrar_estudio(self):
-        print(f"{estudiante1.nombre} estudia {estudiante1.carrera} y su promeido es de {estudiante1.promedio}")
+        print(f"{self.nombre} estudia {self.carrera} y su promeido es de {self.promedio}")
 
 estudiante1 = Estudiante("María", 22, "Programación", 8.5)
 estudiante1.presentarse()
