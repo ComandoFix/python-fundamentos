@@ -41,7 +41,6 @@ edad = int(input("Tu edad: "))
 ---
 
 ## 3. F-strings
-
 Permiten insertar variables dentro de texto de forma limpia.
 ```python
 nombre = "Emanuel"
@@ -59,8 +58,8 @@ print(f"El año que viene tenés {edad + 1} años.")
 |---|---|
 | `==` | igual a |
 | `!=` | distinto de |
-| `>` | mayor que |
-| `<` | menor que |
+| `>`  | mayor que |
+| `<`  | menor que |
 | `>=` | mayor o igual |
 | `<=` | menor o igual |
 
@@ -68,7 +67,7 @@ print(f"El año que viene tenés {edad + 1} años.")
 | Operador | Descripción |
 |---|---|
 | `and` | ambas condiciones deben ser True |
-| `or` | al menos una debe ser True |
+| `or`  | al menos una debe ser True |
 | `not` | invierte el resultado |
 
 ---
