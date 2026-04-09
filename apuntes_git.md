@@ -16,26 +16,40 @@ y que otros puedan verlo. Es donde va tu portfolio.
 Estos comandos se usan UNA SOLA VEZ para configurar un proyecto nuevo.
 
 ### 1. Configurar tu identidad (solo la primera vez en la PC)
-```````````````git config --global user.name "Tu Nombre"```
-``````````````git config --global user.email "tu@email.com"```
+```
+git config --global user.name "Tu Nombre"
+git config --global user.email "tu@email.com"
+```
 
 ### 2. Inicializar Git en la carpeta del proyecto
-`````````````git init```
+```
+git init
+```
 
 ### 3. Agregar todos los archivos
-````````````git add .```
+```
+git add .
+```
 
 ### 4. Crear el primer commit
-```````````git commit -m "feat: descripción de lo que hiciste"```
+```
+git commit -m "feat: descripción de lo que hiciste"
+```
 
 ### 5. Renombrar la rama principal
-``````````git branch -M main```
+```
+git branch -M main
+```
 
 ### 6. Conectar con GitHub (reemplazá TU_USUARIO)
-`````````git remote add origin https://github.com/TU_USUARIO/nombre-repo.git```
+```
+git remote add origin https://github.com/TU_USUARIO/nombre-repo.git
+```
 
 ### 7. Subir el código
-````````git push -u origin main```
+```
+git push -u origin main
+```
 
 ---
 
@@ -44,13 +58,19 @@ Estos comandos se usan UNA SOLA VEZ para configurar un proyecto nuevo.
 Estos tres comandos los vas a usar TODO EL TIEMPO.
 
 ### 1. Agregar los cambios
-```````git add .```
+```
+git add .
+```
 
 ### 2. Crear el commit con descripción
-``````git commit -m "descripción de lo que cambiaste"```
+```
+git commit -m "descripción de lo que cambiaste"
+```
 
 ### 3. Subir a GitHub
-`````git push```
+```
+git push
+```
 
 ---
 
@@ -72,13 +92,55 @@ Convención real usada en equipos profesionales:
 
 ---
 
-## Comandos útiles extra
+## Comandos útiles
 
-Ver el estado actual de los archivos modificados:
-````git status```
+### Ver el estado actual de los archivos modificados
+```
+git status
+```
 
-Ver el historial de commits:
-```git log --oneline```
+### Ver el historial de commits
+```
+git log --oneline
+```
+
+### Ver qué archivos está rastreando Git
+```
+git ls-files
+```
+
+### Ver diferencias entre archivos modificados
+```
+git diff
+```
+
+### Deshacer el último commit sin perder los cambios
+```
+git reset --soft HEAD~1
+```
+
+### Clonar un repositorio en una máquina nueva
+```
+git clone https://github.com/USUARIO/REPO.git
+```
+
+### Cambiar la URL remota si da error "remote origin already exists"
+```
+git remote set-url origin https://github.com/TU_USUARIO/nombre-repo.git
+```
+
+---
+
+## Eliminar una carpeta del repositorio sin borrarla de tu PC
+
+Útil cuando subiste por error una carpeta que debía estar en `.gitignore` (como `venv/`).
+
+```
+git rm -r --cached nombre_carpeta/
+git add .
+git commit -m "fix: eliminar carpeta del repositorio"
+git push
+```
 
 ---
 
@@ -87,5 +149,3 @@ Ver el historial de commits:
 - `git add .` → metés los archivos en una caja
 - `git commit` → sellás la caja con una etiqueta descriptiva
 - `git push` → mandás la caja a GitHub
-```
-
