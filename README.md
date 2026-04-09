@@ -21,9 +21,9 @@ Parte del roadmap hacia **Backend Developer with AI Integration**.
 - [x] Clases y objetos
 - [x] Herencia
 - [x] Encapsulamiento
-- [ ] Manejo de archivos y errores
-- [ ] Librerías estándar: os, json, datetime
-- [ ] Entornos virtuales y pip
+- [x] Manejo de archivos y errores
+- [x] Librerías estándar: os, json, datetime
+- [x] Entornos virtuales y pip
 - [ ] Proyecto final: Gestor de Contactos refactorizado con OOP
 
 ### ⏳ Fase 3 — Backend con Python
