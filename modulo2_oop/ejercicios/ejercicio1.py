@@ -1,3 +1,11 @@
+# Ejercicio 1 — Clase básica
+# Consigna:
+# Creá una clase llamada Libro con:
+# Atributos: titulo, autor, paginas
+# Método mostrar_info() que imprima los tres datos
+# Método es_largo() que imprima si el libro tiene más de 300 páginas o no
+
+
 class Libro:
     def __init__(self, titulo, autor, paginas):
         self.titulo = titulo
