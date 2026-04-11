@@ -1,29 +1,25 @@
-📋 Consigna — Proyecto Final Módulo 2
-Nombre del proyecto: Gestor de Contactos v2
-Objetivo: Refactorizar el Gestor de Contactos del Módulo 1 aplicando todo lo aprendido en el Módulo 2.
+- Crear una lista vacía llamada "contactos"
 
-Requisitos:
-1. Usar OOP
-Cada contacto debe ser un objeto de la clase Contacto, no un diccionario. La clase debe tener:
+- Crear una función "agregar_contacto" que reciba nombre, teléfono y email
+    - Crear un diccionario con esos datos
+    - Agregarlo a la lista contactos
 
-Atributos: nombre, telefono, email
-Método mostrar() que imprima los datos del contacto
-Método to_dict() que convierta el objeto a diccionario
-Método from_dict() que cree un objeto desde un diccionario
+- Crear una función "ver_contactos" que:
+    - Si la lista está vacía, avise al usuario
+    - Si no, recorra la lista y muestre cada contacto
 
-2. Persistencia con JSON
-Los contactos deben guardarse en un archivo contactos.json automáticamente cada vez que se agrega o elimina uno. Al abrir el programa, los contactos deben cargarse desde ese archivo. Si cerrás y abrís el programa, los contactos tienen que seguir ahí.
-3. Manejo de errores
-El programa no debe romperse ante entradas inválidas o archivos inexistentes.
-4. Separación de archivos
+- Crear una función "buscar_contacto" que reciba un nombre:
+    - Recorra la lista buscando ese nombre
+    - Si lo encuentra, lo muestra
+    - Si no, avisa al usuario
 
-contacto.py → solo la clase Contacto
-main.py → importa la clase y maneja el menú y la lógica
+- Crear una función "eliminar_contacto" que reciba un nombre:
+    - Recorra la lista buscando ese nombre
+    - Si lo encuentra, lo elimina
+    - Si no, avisa al usuario
 
-5. Menú igual al Módulo 1
-
-Agregar contacto
-Ver contactos
-Buscar contacto
-Eliminar contacto
-Salir
+- Crear un bucle while True que:
+    - Muestre un menú con 5 opciones
+    - Pida al usuario que elija
+    - Ejecute la función correspondiente
+    - Si elige 5, rompa el bucle con break
